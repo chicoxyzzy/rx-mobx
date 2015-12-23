@@ -10,4 +10,4 @@ npm install --save rx-mobservable
 
 ### Usage
 
-For usage examples see [tests](/src/__test__/index.js).
+For usage examples see [tests](/tests/index.js).
