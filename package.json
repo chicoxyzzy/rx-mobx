@@ -21,6 +21,10 @@
     "converter"
   ],
   "author": "Sergei Rubanov",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chicoxyzzy/rx-mobservable.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.3.17",
