@@ -1,6 +1,6 @@
 {
   "name": "rx-mobservable",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert Mobservable observables to RxJS and vice-versa",
   "main": "lib/index.js",
   "scripts": {
