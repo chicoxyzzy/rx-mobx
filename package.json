@@ -1,15 +1,16 @@
 {
   "name": "rx-mobservable",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Convert Mobservable observables to RxJS and vice-versa",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-file index.js",
-    "test": "babel-tape-runner .src/__test__/index.js",
-    "lint": "eslint src/ *.js",
+    "build": "babel src --out-dir lib",
+    "test": "babel-tape-runner .tests/index.js",
+    "lint": "eslint src/**/*.js",
     "preversion": "npm run lint && npm test && npm run build",
     "postversion": "git push origin HEAD && git push --tags",
-    "postinstall": "npm dedupe"
+    "postinstall": "npm dedupe",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "observables",
@@ -29,7 +30,10 @@
     "eslint-config-airbnb": "^2.1.1",
     "mobservable": "^1.1.7",
     "rxjs": "^5.0.0-beta.0",
-    "tap-nyan": "0.0.2",
-    "tape": "^4.3.0"
+    "tap-nyan": "0.0.2"
+  },
+  "peerDependencies": {
+    "mobservable": "^1.1.7",
+    "rxjs": "^5.0.0-beta.0"
   }
 }

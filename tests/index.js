@@ -1,7 +1,7 @@
 import tape from 'tape';
 import Rx from 'rxjs/Rx';
 import { observable } from 'mobservable';
-import { rxToMobservable, mobservableToRx } from '../';
+import { rxToMobservable, mobservableToRx } from '../src';
 
 tape('mobservable to rx', t => {
   t.plan(3);
