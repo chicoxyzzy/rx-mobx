@@ -1,4 +1,6 @@
-.idea
+.babelrc
 .eslintrc
 .gitignore
-.babelrc
+.idea
+node_modules
+tests
