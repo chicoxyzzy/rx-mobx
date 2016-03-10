@@ -1,7 +1,7 @@
 {
-  "name": "rx-mobservable",
+  "name": "rx-mobx",
   "version": "1.0.1",
-  "description": "Convert Mobservable observables to RxJS and vice-versa",
+  "description": "Convert MobX observables to RxJS and vice-versa",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "observables",
-    "Mobservable",
+    "MobX",
     "RxJS",
     "Rx",
     "FRP",
@@ -23,7 +23,7 @@
   "author": "Sergei Rubanov",
   "repository": {
     "type": "git",
-    "url": "git://github.com/chicoxyzzy/rx-mobservable.git"
+    "url": "git://github.com/chicoxyzzy/rx-mobx.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -32,13 +32,13 @@
     "babel-tape-runner": "^2.0.0",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.1.1",
-    "mobservable": "^1.1.7",
+    "mobx": "^2.0.0",
     "rxjs": "^5.0.0-beta.0",
     "tap-nyan": "0.0.2",
     "tape": "^4.3.0"
   },
   "peerDependencies": {
-    "mobservable": "^1.1.7",
+    "mobx": "^2.0.0",
     "rxjs": "^5.0.0-beta.0"
   }
 }
