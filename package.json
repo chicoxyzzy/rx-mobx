@@ -20,7 +20,14 @@
     "FRP",
     "converter"
   ],
-  "author": "Sergei Rubanov",
+  "contributors": [
+    {
+      "name": "Sergei Rubanov"
+    },
+    {
+      "name": "Michel Weststrate"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/chicoxyzzy/rx-mobx.git"
