@@ -1,2 +1,2 @@
-export { rxToMobservable } from './rxToMobservable';
-export { mobservableToRx } from './mobservableToRx';
+export { rxToMobx } from './rxToMobx';
+export { mobxToRx } from './mobxToRx';

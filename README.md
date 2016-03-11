@@ -1,11 +1,11 @@
-# Rx-Mobservable
+# Rx-MobX
 
-The [RxJS 5](https://github.com/ReactiveX/RxJS) and [Mobservable](https://github.com/mweststrate/mobservable) interop
+The [RxJS 5](https://github.com/ReactiveX/RxJS) and [MobX](https://github.com/mweststrate/mobx) interop
 
 ### Installation
 
 ```
-npm install --save rx-mobservable
+npm install --save rx-mobx
 ```
 
 ### Usage

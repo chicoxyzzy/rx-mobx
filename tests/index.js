@@ -1,24 +1,24 @@
 import tape from 'tape';
 import Rx from 'rxjs/Rx';
-import { observable } from 'mobservable';
-import { rxToMobservable, mobservableToRx } from '../src';
+import { observable } from 'mobx';
+import { rxToMobx, mobxToRx } from '../src';
 
-tape('mobservable to rx', t => {
+tape('mobx to rx', t => {
   t.plan(3);
   let counter = 1;
-  const mobservable = observable(null);
-  const rxObservable = mobservableToRx(mobservable).subscribe(value => t.equal(value, counter));
+  const mobx = observable(null);
+  const rxObservable = mobxToRx(mobx).subscribe(value => t.equal(value, counter));
   for (; counter < 4; counter++) {
-    mobservable(counter);
+    mobx.set(counter);
   }
   rxObservable.unsubscribe();
 });
 
-tape('rx to mobservable', t => {
+tape('rx to mobx', t => {
   t.plan(3);
   let counter = 1;
   const rxSubject = new Rx.Subject();
-  const mobservble = rxToMobservable(rxSubject).observe(value => t.equal(value, counter));
+  const mobservble = rxToMobx(rxSubject).observe(value => t.equal(value, counter));
   for (; counter < 4; counter++) {
     rxSubject.next(counter);
   }
